@@ -259,7 +259,6 @@ const SignInScreen = ({ navigation }) => {
             />
 
             <Button
-              type="clear"
               style={{ marginTop: 10 }}
               title="Sign Up"
               onPress={signin}
