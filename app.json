@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "For the first time if you open the app \n  : For the very first time it can take some time. So be patient.\n  : Once you will get Login Page \n      => Login\n      =>  If you are new to the account\n      =>  You should choose sign in\n  \nOnce you are logged In or Signed in \n  => For every time you will automatically get the actual Home Page \n        => If the home page doesn't have any data it will automatically show a spinner\n  \n        => You should add some books.\n      \n              : Go to drawer-> add the book\n    Add Page ->\n             Functionality:\n                  => In add book, if your author is not mentioned you should choose to add author\n                        => Type Name and Save.\n                  => Now fill the form. and submit. you will automatically navigate to the main page. \n    Main Page ->\n           DML: here you can update rating or delete entries you have entered\n           View: \n                 1. You can see similar books written by the same writer\n                 2. You can see books by rating\n                      => If the number of rating it will show all books again ",
+    "githubUrl": "https://github.com/techamit95ch/bookRepo"
   }
 }
