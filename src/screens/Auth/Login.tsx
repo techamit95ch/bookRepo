@@ -60,7 +60,7 @@ const LoginScreen = ({ navigation }) => {
           });
           setSuccess('');
           navigation.navigate('Content');
-        }, 5000);
+        }, 3000);
       } else {
         await setError({ ...error, errorMessage: results.errorMessage });
         await setAlert(true);
