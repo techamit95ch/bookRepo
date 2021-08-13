@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import { reducers } from './src/reducers';
+import Navigation from './src/Navigation';
 
 export default function App() {
+  // LogBox.ignoreLogs(["Setting a timer for a long period of time"]);
+
+  const store = createStore(reducers, compose(applyMiddleware(thunk)));
+  // LogBox.ignoreLogs(['Setting a timer']);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Provider store={store}>
+        {/* <AsyncApp /> */}
+        <Navigation />
+      </Provider>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
